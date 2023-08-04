@@ -1,0 +1,149 @@
+/*--------------------------------------------------------------
+# Contandor
+--------------------------------------------------------------*/
+
+.statistics-section {
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Fondo negro con transparencia */
+    color: white;
+    padding: 60px 0;
+    /* Ajusta los márgenes superior e inferior */
+    text-align: center;
+    box-sizing: border-box;
+    /* Incluye el padding en el ancho total */
+    padding-bottom: 150px;
+}
+
+.statistics-section h2 {
+    color: white;
+    margin-top: 30px;
+    /* Ajusta el margen superior del título */
+}
+
+.statistic-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    /* Establece un ancho máximo para el contenido */
+    margin: 0 auto;
+    /* Centra el contenido en la pantalla */
+}
+
+.statistic {
+    width: 200px;
+    margin: 20px;
+    padding: 20px;
+    /* Añade un poco de espacio entre los elementos */
+}
+
+.statistic h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.statistic p {
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+/* Agrega espacio vacío en la parte inferior */
+.space-bottom {
+    margin-bottom: 40px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estilos para hacer que el slider se ajuste al tamaño de pantalla */
+@media (max-width: 767px) {
+    .swiper-slide {
+        flex-wrap: wrap;
+    }
+
+    .swiper-slide img {
+        max-height: 100px;
+        max-width: 100px;
+        margin: 5px;
+    }
+}
+
+.services-section {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.service img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border-style: solid;
+}
+
+.service h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service p {
+    text-align: center;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #003366;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #005588;
+}
+
+.contact-button {
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contact-button a {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button a:hover {
+    background-color: #ff8000;
+}
+
+.service ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.service li {
+    margin-bottom: 5px;
+}
+
