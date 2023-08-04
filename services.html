@@ -30,7 +30,6 @@
   <link href="assets/css/style.css" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <script type="text/javascript" src="assets/js/jsCustomer/spinnerLoad.js"></script>
   <!-- =======================================================
   * Template Name: Anyar
   * Updated: Mar 10 2023 with Bootstrap v5.2.3
@@ -89,7 +88,19 @@
 
 <!-- End Icon Boxes Section -->
 <br><br><br><br><br><br>
+<script>
+  window.onload = function() {
+// Mostrar la pantalla de carga
+const loader = document.getElementById('loader');
+loader.style.display = 'flex';
 
+// Simular un retraso de 1.5 segundos
+setTimeout(function() {
+  // Ocultar la pantalla de carga y mostrar el contenido de la página
+  loader.style.display = 'none';
+  document.getElementById('page-content').style.display = 'block';
+}, 3000);
+};
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
       <div class="container" data-aos="fade-up">
